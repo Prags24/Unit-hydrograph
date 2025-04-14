@@ -149,25 +149,3 @@ print(df_result)
 
 
 
-
-# #90 min S curve
-# S_shifted_90=np.zeros_like(S_curve)
-# S_shifted_90[6:] = S_curve[:-6] #lag the S curve for 6 steps
-# UH_90min= (S_curve- S_shifted_90 ) / (90/60) 
-# plt.plot(t_UH_75, UH_75min, 'o-', label="75-min UH", color="green")
-
-# #print the values of 90 min UH
-# print()
-# print("90 minute Unit hydrograph")
-# print(UH_90min)
-# #time range of 90 min UH
-# t_UH_90 = np.arange(0, len(UH_90min) * 0.25, 0.25)
-
-# #plot 90 min Uh graph
-# plt.plot(t_UH_90, UH_90min, 'o-', label="90-min UH ", color="red")
-# plt.xlabel("Time (hours)")
-# plt.ylabel("Discharge (m³/sec per mm)")
-# plt.grid()
-# plt.legend()
-# plt.tight_layout()
-# plt.show()
